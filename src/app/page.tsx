@@ -40,7 +40,7 @@ export default function Home() {
             )}
             href={"/register"}
           >
-            Sign up for free
+            Join for free
           </Link>
           <Button className="bg-white text-gray-700 w-2/3 h-12 text-sm md:text-lg sm:text-md border-2 border-gray-400 hover:bg-gray-400 hover:text-white hover:border-0 shadow-md shadow-gray-600 rounded-xl">
             <Image
@@ -56,9 +56,10 @@ export default function Home() {
             Already a member?{" "}
             <Button
               variant="link"
+              asChild
               className="p-0 text-orange-500 text-md font-medium"
             >
-              Log in
+              <Link href="/login">Login</Link>
             </Button>
           </h2>
         </div>
